@@ -23,6 +23,9 @@ export const Nav = () => {
 
                 {/* Desktop Links */}
                 <div className="hidden md:flex space-x-6 ">
+                    <Link to="/" className="text-cyan-200 font-bold hover:text-yellow-400 transition">
+                        Home
+                    </Link>
                     <Link to="/about" className="text-cyan-200 font-bold hover:text-yellow-400 transition">
                         About
                     </Link>

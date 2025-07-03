@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 export const Hero = () => {
   return (
     <div className="relative h-[80vh] w-full overflow-hidden bg-[url('/hero.jpeg')] bg-contain bg-cover bg-center bg-no-repeat flex flex-col justify-center items-center px-4 ">
@@ -15,9 +16,9 @@ export const Hero = () => {
 
       {/* Buttons */}
       <div className="relative mt-6 flex space-x-4">
-        <button className="bg-cyan-500 text-white px-5 py-2 rounded-lg font-medium hover:bg-cyan-600 transition">
+        <Link to="/form" className="bg-cyan-500 text-white px-5 py-2 rounded-lg font-medium hover:bg-cyan-600 transition">
           Get Started
-        </button>
+        </Link>
         <a href="tel:+919334167296" className="bg-white text-cyan-600 px-5 py-2 rounded-lg font-medium hover:bg-cyan-100 transition">
           Contact Us
         </a>

@@ -3,6 +3,7 @@ import App from "./App";
 import { Home } from "./pages/home";
 import { About } from "./pages/about";
 import { Service } from "./components/services";
+import { Form } from "./components/form";
 
 const router =createBrowserRouter([
     {
@@ -20,6 +21,10 @@ const router =createBrowserRouter([
             {
                 path:'/service',
                 element:<Service/>
+            },
+            {
+                path:'/form',
+                element:<Form/>
             }
         ]
     }
