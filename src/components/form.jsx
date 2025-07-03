@@ -1,7 +1,7 @@
 import { useRef } from "react"
-import {  useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 export const Form = () => {
-const navigate=useNavigate();
+    const navigate = useNavigate();
     const name = useRef();
     const email = useRef();
     const mobile = useRef();
@@ -9,8 +9,7 @@ const navigate=useNavigate();
     const handlesubmit = async (e) => {
         e.preventDefault();
         const CHAT_ID = import.meta.env.VITE_CHAT_ID;
-        console.log(CHAT_ID);
-        const BOT_TOKEN =import.meta.VITE_BOT_TOKEN;
+        const BOT_TOKEN = import.meta.env.VITE_BOT_TOKEN;
         const url = `https://api.telegram.org/bot${BOT_TOKEN}/sendMessage`;
 
         const response = await fetch(url, {
@@ -23,72 +22,72 @@ const navigate=useNavigate();
         if (data.ok) {
             alert('thank you\nyour request submit successfully');
             navigate('/');
-        }else{
+        } else {
             alert('something went worng\nplease try again')
         }
 
 
     }
     return (
-        <form 
-  onSubmit={handlesubmit}
-  className="max-w-md mx-auto mt-10 p-8 bg-white shadow-2xl rounded-2xl space-y-6 mb-5" 
->
-  <h2 className="text-2xl font-bold text-center text-gray-800">Get in Touch</h2>
+        <form
+            onSubmit={handlesubmit}
+            className="max-w-md mx-auto mt-10 p-8 bg-white shadow-2xl rounded-2xl space-y-6 mb-5"
+        >
+            <h2 className="text-2xl font-bold text-center text-gray-800">Get in Touch</h2>
 
-  <div>
-    <label htmlFor="name" className="block text-sm font-medium text-gray-700">Name</label>
-    <input
-      type="text"
-      ref={name}
-      id="name"
-      className="mt-1 block w-full rounded-xl border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
-      placeholder="Enter your name"
-    />
-  </div>
+            <div>
+                <label htmlFor="name" className="block text-sm font-medium text-gray-700">Name</label>
+                <input
+                    type="text"
+                    ref={name}
+                    id="name"
+                    className="mt-1 block w-full rounded-xl border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
+                    placeholder="Enter your name"
+                />
+            </div>
 
-  <div>
-    <label htmlFor="email" className="block text-sm font-medium text-gray-700">Email</label>
-    <input
-      type="email"
-      ref={email}
-      id="email"
-      className="mt-1 block w-full rounded-xl border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
-      placeholder="Enter your email"
-    />
-  </div>
+            <div>
+                <label htmlFor="email" className="block text-sm font-medium text-gray-700">Email</label>
+                <input
+                    type="email"
+                    ref={email}
+                    id="email"
+                    className="mt-1 block w-full rounded-xl border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
+                    placeholder="Enter your email"
+                />
+            </div>
 
-  <div>
-    <label htmlFor="mobile" className="block text-sm font-medium text-gray-700">Mobile No</label>
-    <input
-      type="tel"
-      ref={mobile}
-      id="mobile"
-      className="mt-1 block w-full rounded-xl border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
-      placeholder="Enter your mobile number"
-    />
-  </div>
+            <div>
+                <label htmlFor="mobile" className="block text-sm font-medium text-gray-700">Mobile No</label>
+                <input
+                    type="tel"
+                    ref={mobile}
+                    id="mobile"
+                    className="mt-1 block w-full rounded-xl border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
+                    placeholder="Enter your mobile number"
+                />
+            </div>
 
-  <div>
-    <label htmlFor="service" className="block text-sm font-medium text-gray-700">Select Service</label>
-    <select
-      ref={service}
-      id="service"
-      className="mt-1 block w-full rounded-xl border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
-    >
-      <option value="Website development">Website Development</option>
-      <option value="App development">App Development</option>
-      <option value="SEO">SEO</option>
-    </select>
-  </div>
+            <div>
+                <label htmlFor="service" className="block text-sm font-medium text-gray-700">Select Service</label>
+                <select
+                    ref={service}
+                    id="service"
+                    className="mt-1 block w-full rounded-xl border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
+                >
+                    <option value="Website development">Website Development</option>
+                    <option value="App development">App Development</option>
+                    <option value="SEO">SEO</option>
+                </select>
+            </div>
 
-  <button
-    type="submit"
-    className="w-full py-2 px-4 bg-indigo-600 hover:bg-indigo-700 text-white font-semibold rounded-xl shadow-md transition"
-  >
-    Submit
-  </button>
-</form>
+            <button
+                type="submit"
+                className="w-full py-2 px-4 bg-indigo-600 hover:bg-indigo-700 text-white font-semibold rounded-xl shadow-md transition"
+            >
+                Submit
+            </button>
+        </form>
 
     )
 }
