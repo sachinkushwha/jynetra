@@ -15,7 +15,7 @@ export const Hero = () => {
       </p>
 
       {/* Buttons */}
-     <div className="relative mt-3 sm:mt-6 flex space-x-2 sm:space-x-4">
+     <div className="relative mt-3 sm:mt-6 flex space-x-3 sm:space-x-4">
   <Link
     to="/form"
     className="bg-cyan-500 text-white px-3 py-1 sm:px-5 sm:py-2 rounded-md font-medium hover:bg-cyan-600 transition text-xs sm:text-base"
