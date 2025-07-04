@@ -18,13 +18,13 @@ export const Hero = () => {
      <div className="relative mt-3 sm:mt-6 flex space-x-2 sm:space-x-4">
   <Link
     to="/form"
-    className="bg-cyan-500 text-white px-2 py-0.5 sm:px-5 sm:py-2 rounded-md font-medium hover:bg-cyan-600 transition text-xs sm:text-base"
+    className="bg-cyan-500 text-white px-3 py-1 sm:px-5 sm:py-2 rounded-md font-medium hover:bg-cyan-600 transition text-xs sm:text-base"
   >
     Get Started
   </Link>
   <a
     href="tel:+919334167296"
-    className="bg-white text-cyan-600 px-2 py-0.5 sm:px-5 sm:py-2 rounded-md font-medium hover:bg-cyan-100 transition text-xs sm:text-base"
+    className="bg-white text-cyan-600 px-3 py-1 sm:px-5 sm:py-2 rounded-md font-medium hover:bg-cyan-100 transition text-xs sm:text-base"
   >
     Contact Us
   </a>
