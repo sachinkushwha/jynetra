@@ -8,7 +8,7 @@ import { Instagram, Linkedin } from 'lucide-react'
 function App() {
 const footerdata=[
   {
-    name:'Contact Us',data:['Email: contact@jynetra.com','Phone: +91-XXXXXXXXXX','Location: India']
+    name:'Contact Us',data:['Email: sachinkushawaha349@gmail.com','Phone: +91-9334167296','Location: India']
   },
   {
     name:'Services',data:['Website Development','App Development','UI/UX Design']
