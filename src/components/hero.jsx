@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 export const Hero = () => {
   return (
-    <div className="relative sm:h-[80vh] h-[20vh] w-full overflow-hidden bg-[url('/hero.jpeg')] bg-contain bg-cover bg-center bg-no-repeat flex flex-col justify-center items-center px-4 ">
+    <div className="relative sm:h-[80vh] h-[25vh] w-full overflow-hidden bg-[url('/hero.jpeg')] bg-contain bg-cover bg-center bg-no-repeat flex flex-col justify-center items-center px-4 ">
       
       {/* Black overlay */}
       <div className="absolute inset-0 bg-black/50"></div>
