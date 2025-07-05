@@ -7,8 +7,8 @@ import { About } from "./about"
 
 export const Home=()=>{
     const project=[
-        {name:'Physiotherapy Clinic Website',dis:'A clean, responsive website for a physiotherapy clinic with essential information and contact details. Built using MERN.'},
-        {name:'TextRefine Web Tool',dis:'A simple tool that performs text operations like removing punctuation, converting to uppercase, and more. Created using Django.'}
+        {name:'Physiotherapy Clinic Website',dis:'A clean, responsive website for a physiotherapy clinic with essential information and contact details. Built using MERN.',link:'https://drkalimphysio.vercel.app'},
+        {name:'UnivPaperHub',dis:'UnivPaperHub is a clean, responsive web application designed to help university students easily access previous year question papers and academic materials.',link:'https://univpaperhub.onrender.com/'}
     ]
     return(
         <>

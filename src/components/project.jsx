@@ -20,7 +20,7 @@ export const Project = ({ project }) => {
               {Projects.dis}
             </p>
 
-            {/* <div className="mt-4">
+            <div className="mt-4">
               <a
                 href={Projects.link || "#"}
                 target="_blank"
@@ -29,7 +29,7 @@ export const Project = ({ project }) => {
               >
                 View Project →
               </a>
-            </div> */}
+            </div>
           </div>
         ))}
       </div>
