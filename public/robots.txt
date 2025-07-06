@@ -1,3 +1,3 @@
 User-agent: *
 Allow: /
-Sitemap: https://drkalimphysio.vercel.app/sitemap.xml
+Sitemap: https://jynetra.vercel.app/sitemap.xml
