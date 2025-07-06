@@ -1,7 +1,6 @@
 // import './App.css'
-import { Hero } from './components/hero'
 import { Nav } from './components/nav'
-import {data, Outlet} from 'react-router-dom'
+import { Outlet} from 'react-router-dom'
 import ScrollTotop from './scrolltotop'
 import { Footer } from './components/footer'
 import { Instagram, Linkedin } from 'lucide-react'
