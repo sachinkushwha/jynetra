@@ -5,19 +5,25 @@ import { Review } from "../components/review"
 import { Service } from "../components/services"
 import { About } from "./about"
 
-export const Home=()=>{
-    const project=[
-        {name:'Physiotherapy Clinic Website',dis:'A clean, responsive website for a physiotherapy clinic with essential information and contact details. Built using MERN.',link:'https://drkalimphysio.vercel.app'},
-        {name:'UnivPaperHub',dis:'UnivPaperHub is a clean, responsive web application designed to help university students easily access previous year question papers and academic materials.',link:'https://univpaperhub.onrender.com/'}
+export const Home = () => {
+    const project = [
+        { name: 'Physiotherapy Clinic Website', dis: 'A clean, responsive website for a physiotherapy clinic with essential information and contact details. Built using MERN.', link: 'https://drkalimphysio.vercel.app' },
+        { name: 'UnivPaperHub', dis: 'UnivPaperHub is a clean, responsive web application designed to help university students easily access previous year question papers and academic materials.', link: 'https://univpaperhub.onrender.com/' },
+        {
+            name: 'QR Code Genie',
+            dis: 'QR Code Genie is a clean, mobile-responsive web application that lets users generate and download QR codes instantly. Just enter any link and get a shareable QR code in seconds.',
+            link: 'https://qrcodegenrater-hazel.vercel.app/'
+        }
+
     ]
-    return(
+    return (
         <>
-        <Hero/>
-        <About/>
-        <Service/>
-        <Project project={project}/>
-        <Choice/>
-        <Review/>
+            <Hero />
+            <About />
+            <Service />
+            <Project project={project} />
+            <Choice />
+            <Review />
         </>
     )
 }
