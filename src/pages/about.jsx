@@ -6,10 +6,8 @@ export const About = () => {
           About <span className="text-cyan-600">Jynetra</span>
         </h2>
         <p className="text-sm sm:text-base md:text-lg text-gray-700 leading-relaxed">
-          Jynetra is a modern Indian IT company delivering innovative digital solutions.
-          From startups to growing brands, we build powerful websites, smart tools, and
-          creative digital experiences. Our focus is on quality, performance, and user-first design
-          to help businesses grow in a digital-first world.
+          Jynetra is an independent Indian software services brand operated by Sachin Kushwaha.
+          We deliver modern web development and digital solutions for startups and growing businesses across India. From high-performance websites to custom tools and user-focused digital experiences, our work is driven by quality, speed, and practical design that helps businesses grow in today’s digital-first world.
         </p>
       </div>
     </section>
