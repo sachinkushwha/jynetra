@@ -86,11 +86,23 @@ export const Form = () => {
             <option className="text-black" value="Website development">
               Website Development
             </option>
-            <option className="text-black" value="App development">
-              App Development
+            
+            <option className="text-black" value="Business Website">
+              Business Website
             </option>
-            <option className="text-black" value="SEO">
-              SEO
+            
+            <option className="text-black" value="Landing Page">
+              Landing Page
+            </option>
+            <option className="text-black" value="Website Redesign">
+              Website Redesign
+            </option>
+            <option className="text-black" value="Website Maintenance">
+              Website Maintenance
+            </option>
+
+            <option className="text-black" value="Basic SEO">
+              Basic SEO
             </option>
           </select>
         </div>
