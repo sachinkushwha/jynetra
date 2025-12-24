@@ -34,10 +34,10 @@ export const Form = () => {
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-indigo-500 via-purple-500 to-pink-500 p-4 md:p-6">
+    <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-600 to-blue-800 p-4 md:p-6">
       <form
         onSubmit={handlesubmit}
-        className="w-full max-w-md backdrop-blur-xl bg-white/10 border border-white/20 shadow-2xl rounded-3xl p-6 md:p-8 space-y-6 animate-fadeIn"
+        className="w-full max-w-md backdrop-blur-xl bg-white/10 border border-white/30 shadow-2xl rounded-3xl p-6 md:p-8 space-y-6 animate-fadeIn"
       >
         <div className="text-center">
           <h2 className="text-3xl font-bold text-white drop-shadow-lg mb-2">
@@ -57,7 +57,7 @@ export const Form = () => {
               type="text"
               ref={name}
               required
-              className="w-full rounded-xl bg-white/15 text-white placeholder-white/50 border border-white/30 focus:ring-2 focus:ring-white/50 focus:border-transparent transition-all duration-200 backdrop-blur-md p-3.5 text-base hover:bg-white/20"
+              className="w-full rounded-xl bg-white/15 text-white placeholder-white/50 border border-white/30 focus:ring-2 focus:ring-blue-300 focus:border-transparent transition-all duration-200 backdrop-blur-md p-3.5 text-base hover:bg-white/20"
               placeholder="John Doe"
             />
           </div>
@@ -70,7 +70,7 @@ export const Form = () => {
               type="email"
               ref={email}
               required
-              className="w-full rounded-xl bg-white/15 text-white placeholder-white/50 border border-white/30 focus:ring-2 focus:ring-white/50 focus:border-transparent transition-all duration-200 backdrop-blur-md p-3.5 text-base hover:bg-white/20"
+              className="w-full rounded-xl bg-white/15 text-white placeholder-white/50 border border-white/30 focus:ring-2 focus:ring-blue-300 focus:border-transparent transition-all duration-200 backdrop-blur-md p-3.5 text-base hover:bg-white/20"
               placeholder="john@example.com"
             />
           </div>
@@ -83,7 +83,7 @@ export const Form = () => {
               type="tel"
               ref={mobile}
               required
-              className="w-full rounded-xl bg-white/15 text-white placeholder-white/50 border border-white/30 focus:ring-2 focus:ring-white/50 focus:border-transparent transition-all duration-200 backdrop-blur-md p-3.5 text-base hover:bg-white/20"
+              className="w-full rounded-xl bg-white/15 text-white placeholder-white/50 border border-white/30 focus:ring-2 focus:ring-blue-300 focus:border-transparent transition-all duration-200 backdrop-blur-md p-3.5 text-base hover:bg-white/20"
               placeholder="+1 234 567 8900"
             />
           </div>
@@ -95,9 +95,9 @@ export const Form = () => {
             <select
               ref={service}
               required
-              className="w-full rounded-xl bg-white/15 text-white border border-white/30 focus:ring-2 focus:ring-white/50 focus:border-transparent transition-all duration-200 backdrop-blur-md p-3.5 text-base hover:bg-white/20 appearance-none cursor-pointer"
+              className="w-full rounded-xl bg-white/15 text-white border border-white/30 focus:ring-2 focus:ring-blue-300 focus:border-transparent transition-all duration-200 backdrop-blur-md p-3.5 text-base hover:bg-white/20 appearance-none cursor-pointer"
             >
-              <option value="" disabled selected className="text-white/50 bg-gray-800">
+              <option value="" disabled selected className="text-white/50 bg-blue-900">
                 Choose a service
               </option>
               <option className="text-gray-900 bg-white" value="Website development">
@@ -124,7 +124,7 @@ export const Form = () => {
 
         <button
           type="submit"
-          className="w-full py-3.5 px-4 bg-gradient-to-r from-indigo-600 to-purple-600 text-white font-bold rounded-xl shadow-lg hover:from-indigo-700 hover:to-purple-700 transition-all duration-200 backdrop-blur-lg hover:shadow-xl hover:scale-[1.02] active:scale-95 mt-2"
+          className="w-full py-3.5 px-4 bg-blue-600 text-white font-bold rounded-xl shadow-lg hover:bg-blue-700 transition-all duration-200 backdrop-blur-lg hover:shadow-xl hover:scale-[1.02] active:scale-95 mt-2"
         >
           Submit Request
         </button>
