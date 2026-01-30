@@ -4,6 +4,7 @@ import { Outlet} from 'react-router-dom'
 import ScrollTotop from './scrolltotop'
 import { Footer } from './components/footer'
 import { Instagram, Linkedin } from 'lucide-react'
+import OmnidiWidget from './components/omnidiWidget'
 function App() {
 const footerdata=[
   {
@@ -20,6 +21,7 @@ const footerdata=[
     <>
     <ScrollTotop/>
      <Nav/>
+     <OmnidiWidget/>
      <Outlet/>
      <Footer data={footerdata}/>
     </>
