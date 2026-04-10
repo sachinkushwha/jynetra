@@ -8,8 +8,8 @@ import { About } from "./about"
 export const Home = () => {
     const project = [
         {
-            name: 'Shyampur Bazar',
-            dis: 'Shyampur Bazar is an online local marketplace platform that connects nearby shopkeepers with customers. Through this website, users can easily browse products from local stores and order daily essentials directly from their home. The platform helps small businesses go digital and provides customers with a simple and convenient shopping experience. It focuses on supporting local markets and making online shopping accessible in small towns.',
+            name: 'Rantik',
+            dis: 'Rantik is an online local marketplace platform that connects nearby shopkeepers with customers. Through this website, users can easily browse products from local stores and order daily essentials directly from their home. The platform helps small businesses go digital and provides customers with a simple and convenient shopping experience. It focuses on supporting local markets and making online shopping accessible in small towns.',
             link: 'https://shyampurbazar.vercel.app/'
         },
         { name: 'Wassap', dis: 'Wassap is a lightweight messaging application that focuses only on text chatting. Through this app, users can instantly send and receive messages. Wassap has a clean and easy-to-use interface, making conversations smooth and fast.This app is best for users who want a simple and reliable chat experience without any extra features.', link: 'https://socketio-q6x1.vercel.app' },
