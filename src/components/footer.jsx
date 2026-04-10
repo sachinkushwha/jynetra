@@ -22,7 +22,7 @@ export const Footer = ({ data }) => {
 
       <div className="mt-12 border-t border-white/30 pt-6 text-center text-sm sm:text-base text-white/80">
         <p>© 2025 <span className="font-semibold text-white">Jynetra</span>. All rights reserved.</p>
-        <p className="mt-1">Developed by <span className="font-semibold text-white">Sachin Kushwaha</span></p>
+        {/* <p className="mt-1">Developed by <span className="font-semibold text-white">Sachin Kushwaha</span></p> */}
       </div>
     </footer>
   );
