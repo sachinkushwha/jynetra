@@ -1,34 +1,75 @@
-import { CheckCircle } from 'lucide-react';
+import { CheckCircle2, ShieldCheck, Zap, Clock, Users } from 'lucide-react';
 
 export const Choice = () => {
-  return (
-    <section className="bg-white py-12 px-4 sm:px-6 md:px-16">
-      <div className="max-w-4xl mx-auto text-center mb-12">
-        <h2 className="text-2xl sm:text-3xl font-bold text-gray-800">
-          Why <span className="text-sky-500">Choose Us?</span>
-        </h2>
-        <p className="mt-2 text-gray-600 text-sm sm:text-base">
-          We bring experience, innovation, and reliability to every project.
-        </p>
-      </div>
+  const points = [
+    { 
+      title: "Custom-Tailored Solutions", 
+      text: "Every client is unique. We build tools specifically for your business goals.",
+      icon: <Users className="text-[#2563EB]" /> 
+    },
+    { 
+      title: "Performance & Security", 
+      text: "Fast, scalable, and secure codebase using the latest modern technologies.",
+      icon: <ShieldCheck className="text-[#2563EB]" /> 
+    },
+    { 
+      title: "On-Time Delivery", 
+      text: "Transparent communication and strict adherence to project deadlines.",
+      icon: <Clock className="text-[#2563EB]" /> 
+    },
+    { 
+      title: "Ongoing Support", 
+      text: "We don't just build and leave; we partner for your long-term success.",
+      icon: <Zap className="text-[#F97316]" /> 
+    },
+  ];
 
-      <div className="max-w-5xl mx-auto grid gap-6 sm:grid-cols-2">
-        {[
-          "Custom-Tailored Solutions for Every Client",
-          "Fast, Scalable, and Secure Codebase",
-          "On-Time Delivery with Transparent Communication",
-          "Ongoing Support & Long-Term Partnership",
-        ].map((point, index) => (
-          <div
-            key={index}
-            className="flex items-center gap-4 bg-gray-50 hover:bg-gray-100 transition p-6 rounded-lg shadow-sm border-l-4 border-sky-500"
-            data-aos="fade-up"
-            data-aos-delay={index * 100}
-          >
-            <CheckCircle className="text-sky-500 w-7 h-7 sm:w-6 sm:h-6 flex-shrink-0" />
-            <p className="text-gray-700 text-sm sm:text-base">{point}</p>
-          </div>
-        ))}
+  return (
+    <section className="bg-white py-24 px-6 sm:px-12 lg:px-24">
+      <div className="max-w-7xl mx-auto">
+        
+        {/* Header Section */}
+        <div className="max-w-3xl mb-16">
+          <span className="text-[#2563EB] font-bold tracking-widest uppercase text-sm bg-[#2563EB]/10 px-3 py-1 rounded-md">
+            The Jynetra Advantage
+          </span>
+          <h2 className="text-3xl md:text-5xl font-extrabold text-[#111827] mt-6 tracking-tight">
+            Why partner with <span className="text-[#2563EB]">Jynetra?</span>
+          </h2>
+          <p className="mt-4 text-[#111827]/60 text-lg sm:text-xl leading-relaxed">
+            We bring experience, innovation, and reliability to every project, ensuring your digital growth is seamless.
+          </p>
+        </div>
+
+        {/* Choice Grid */}
+        <div className="grid gap-8 sm:grid-cols-2">
+          {points.map((item, index) => (
+            <div
+              key={index}
+              className="group flex flex-col items-start gap-4 bg-[#F3F4F6]/30 hover:bg-white p-8 rounded-3xl border border-transparent hover:border-[#2563EB]/10 transition-all duration-300 shadow-sm hover:shadow-xl"
+            >
+              {/* Icon Circle */}
+              <div className="w-12 h-12 flex items-center justify-center bg-white rounded-2xl shadow-sm group-hover:scale-110 transition-transform">
+                {item.icon}
+              </div>
+
+              <div>
+                <h3 className="text-xl font-bold text-[#111827] mb-2">
+                  {item.title}
+                </h3>
+                <p className="text-[#111827]/70 text-base leading-relaxed">
+                  {item.text}
+                </p>
+              </div>
+
+              {/* Subtle Checkmark indicator */}
+              <div className="mt-2 flex items-center gap-2 text-[#2563EB]/40 group-hover:text-[#2563EB] transition-colors">
+                <CheckCircle2 size={18} />
+                <span className="text-xs font-bold uppercase tracking-widest">Verified Standard</span>
+              </div>
+            </div>
+          ))}
+        </div>
       </div>
     </section>
   );

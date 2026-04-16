@@ -1,4 +1,5 @@
 import { Choice } from "../components/choice"
+import { Form } from "../components/form"
 import { Hero } from "../components/hero"
 import { Project } from "../components/project"
 import { Review } from "../components/review"
@@ -33,6 +34,7 @@ export const Home = () => {
             <Project project={project} />
             <Choice />
             <Review />
+            <Form/>
         </>
     )
 }
