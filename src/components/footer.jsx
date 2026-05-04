@@ -31,12 +31,12 @@ export const Footer = ({ data }) => {
               <ul className="space-y-4">
                 {section.data.map((item, idx) => (
                   <li key={idx}>
-                    <a
-                      href="#"
+                    <p
+                      
                       className="text-gray-400 hover:text-[#2563EB] text-sm font-medium transition-all duration-300 hover:translate-x-1 inline-block"
                     >
                       {item}
-                    </a>
+                    </p>
                   </li>
                 ))}
               </ul>

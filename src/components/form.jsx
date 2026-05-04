@@ -118,7 +118,7 @@ export const Form = () => {
               required
               className="w-full bg-[#F3F4F6] border-2 border-transparent focus:border-[#2563EB] focus:bg-white rounded-xl p-4 transition-all outline-none text-[#111827] appearance-none cursor-pointer"
             >
-              <option value="" disabled selected>Select a service...</option>
+              <option value="" disabled >Select a service...</option>
               <option value="Website development">Website Development</option>
               <option value="Business Website">Business Website</option>
               <option value="Landing Page">Landing Page</option>
