@@ -51,7 +51,7 @@ export const Footer = ({ data }) => {
           </div>
           
           <div className="flex gap-8 text-xs font-bold uppercase tracking-widest text-gray-500">
-             <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>
+             <a href="/privacy-policy" className="hover:text-white transition-colors">Privacy Policy</a>
              <a href="#" className="hover:text-white transition-colors">Terms of Service</a>
           </div>
         </div>
