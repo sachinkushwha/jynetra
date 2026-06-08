@@ -7,7 +7,7 @@ export const Hero = () => {
       
       {/* Background Image with Premium Dark Overlay */}
       <div 
-        className="absolute inset-0 bg-[url('/hero.jpeg')] bg-cover bg-center bg-no-repeat scale-105"
+        className="absolute inset-0 bg-[url('/hero.png')] bg-cover bg-center bg-no-repeat scale-105"
         style={{ transform: 'translateZ(0)' }}
       ></div>
       
